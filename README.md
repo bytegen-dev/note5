@@ -102,6 +102,8 @@ fullstack-notes/
    pnpm prisma:seed
    ```
 
+   **Note:** The seed script uses Better Auth's signup API to create the test user, ensuring the password is hashed correctly in the format Better Auth expects. If a test user already exists, it will be deleted and recreated.
+
    **Test User Credentials** (created by seed script):
    - Email: `test@example.com`
    - Password: `password123`
@@ -139,7 +141,7 @@ fullstack-notes/
 - `pnpm prisma:generate` - Generate Prisma client
 - `pnpm prisma:migrate:dev` - Run database migrations
 - `pnpm prisma:migrate:deploy` - Apply migrations in production
-- `pnpm prisma:seed` - Seed database with 50 sample notes
+- `pnpm prisma:seed` - Seed database with 50 sample notes (creates test user via Better Auth signup API, then creates 50 notes)
 - `pnpm prisma:studio` - Open Prisma Studio (visual database browser)
 
 **Additional Prisma commands** (available via Prisma CLI):

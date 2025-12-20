@@ -2,6 +2,7 @@ import { redirect } from "next/navigation";
 
 import { getSession } from "@/lib/auth/utils";
 import { Header } from "@/components/header";
+import { SignOutButton } from "@/components/sign-out-button";
 
 export default async function AppLayout({
   children,
@@ -16,7 +17,9 @@ export default async function AppLayout({
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
+      <Header>
+        <SignOutButton />
+      </Header>
       <main className="container mx-auto px-4 py-8">{children}</main>
     </div>
   );

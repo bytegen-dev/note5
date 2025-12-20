@@ -2,9 +2,20 @@ import type { Prisma } from "../generated/prisma/client.js";
 import prisma from "../client.js";
 
 export const noteRepository = {
-  async findMany(userId: string) {
+  async findMany(userId: string, search?: string) {
+    const where: Prisma.NoteWhereInput = {
+      userId,
+    };
+
+    if (search && search.trim()) {
+      where.OR = [
+        { title: { contains: search, mode: "insensitive" } },
+        { content: { contains: search, mode: "insensitive" } },
+      ];
+    }
+
     return prisma.note.findMany({
-      where: { userId },
+      where,
       orderBy: { updatedAt: "desc" },
     });
   },
@@ -21,11 +32,7 @@ export const noteRepository = {
     });
   },
 
-  async update(
-    id: string,
-    userId: string,
-    data: Prisma.NoteUpdateInput,
-  ) {
+  async update(id: string, userId: string, data: Prisma.NoteUpdateInput) {
     return prisma.note.updateMany({
       where: { id, userId },
       data,
@@ -38,4 +45,3 @@ export const noteRepository = {
     });
   },
 };
-

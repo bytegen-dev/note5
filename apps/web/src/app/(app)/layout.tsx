@@ -17,7 +17,7 @@ export default async function AppLayout({
 
   return (
     <div className="min-h-screen bg-background">
-      <Header>
+      <Header title="My Notes">
         <SignOutButton />
       </Header>
       <main className="container mx-auto px-4 py-8">{children}</main>

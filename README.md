@@ -3,6 +3,7 @@
 <div align="center">
   <img src="apps/web/public/logo-black.png" alt="note5 logo (light mode)" width="200" />
   <img src="apps/web/public/logo-white.png" alt="note5 logo (dark mode)" width="200" />
+<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/7e274acc-1d39-4430-aa17-3d9fc95910b8" />
 </div>
 
 Simplified CRUD app built with Next.js, Prisma, PostgreSQL, Better Auth, and Zod.

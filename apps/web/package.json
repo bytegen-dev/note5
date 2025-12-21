@@ -7,10 +7,12 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "pnpm prisma:generate && pnpm prisma:migrate:deploy && next build",
     "start": "next start",
     "lint": "eslint --max-warnings 0 src",
-    "format": "prettier --log-level silent --write \"src/**/*.{ts,tsx}\""
+    "format": "prettier --log-level silent --write \"src/**/*.{ts,tsx}\"",
+    "prisma:generate": "pnpm --filter @notes/database prisma:generate",
+    "prisma:migrate:deploy": "pnpm --filter @notes/database prisma:migrate:deploy"
   },
   "dependencies": {
     "@better-auth/utils": "0.3.0",

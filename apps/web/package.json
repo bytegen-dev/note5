@@ -9,7 +9,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint --max-warnings 0 .",
+    "lint": "eslint --max-warnings 0 src",
     "format": "prettier --log-level silent --write \"src/**/*.{ts,tsx}\""
   },
   "dependencies": {

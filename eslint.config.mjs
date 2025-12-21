@@ -3,7 +3,7 @@ import prettier from "eslint-config-prettier/flat";
 import tseslint from "typescript-eslint";
 
 /**
- * Base ESLint configuration for the fullstack-notes monorepo.
+ * Base ESLint configuration for the note5 monorepo.
  */
 const baseConfig = defineConfig([
   ...tseslint.configs.recommended,

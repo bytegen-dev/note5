@@ -129,11 +129,11 @@ export function SignUpForm() {
       <div className="space-y-2">
         <Label htmlFor="password">Password</Label>
         <div className="relative">
-          <Input
-            id="password"
+        <Input
+          id="password"
             type={showPassword ? "text" : "password"}
             placeholder="********"
-            {...form.register("password")}
+          {...form.register("password")}
             className="pr-10"
           />
           <Button

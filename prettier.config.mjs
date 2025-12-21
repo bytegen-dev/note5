@@ -1,5 +1,5 @@
 /**
- * Base Prettier configuration for the fullstack-notes monorepo.
+ * Base Prettier configuration for the note5 monorepo.
  * Extended by individual packages with their specific needs.
  *
  * @type {import('prettier').Config}

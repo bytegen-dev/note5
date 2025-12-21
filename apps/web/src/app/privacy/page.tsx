@@ -23,10 +23,10 @@ export default function PrivacyPage() {
         <section className="space-y-4">
           <h2 className="text-2xl font-semibold">1. Introduction</h2>
           <p className="text-muted-foreground">
-            Welcome to Fullstack Notes. We respect your privacy and are
-            committed to protecting your personal data. This privacy policy
-            explains how we collect, use, and safeguard your information when
-            you use our application.
+            Welcome to note5. We respect your privacy and are committed to
+            protecting your personal data. This privacy policy explains how we
+            collect, use, and safeguard your information when you use our
+            application.
           </p>
         </section>
 
@@ -57,7 +57,9 @@ export default function PrivacyPage() {
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">3. How We Use Your Information</h2>
+          <h2 className="text-2xl font-semibold">
+            3. How We Use Your Information
+          </h2>
           <div className="space-y-2 text-muted-foreground">
             <p>We use your information to:</p>
             <ul className="list-disc list-inside space-y-2 ml-4">
@@ -81,9 +83,9 @@ export default function PrivacyPage() {
                 to function and cannot be disabled.
               </li>
               <li>
-                <strong>Preference Cookies:</strong> Store your theme
-                preference (dark/light mode) to provide a consistent experience
-                across sessions.
+                <strong>Preference Cookies:</strong> Store your theme preference
+                (dark/light mode) to provide a consistent experience across
+                sessions.
               </li>
             </ul>
             <p>
@@ -108,10 +110,10 @@ export default function PrivacyPage() {
         <section className="space-y-4">
           <h2 className="text-2xl font-semibold">6. Data Storage</h2>
           <p className="text-muted-foreground">
-            Your data is stored in a PostgreSQL database. We retain your
-            account information and notes for as long as your account is active.
-            If you delete your account, we will delete your personal data in
-            accordance with our data retention policies.
+            Your data is stored in a PostgreSQL database. We retain your account
+            information and notes for as long as your account is active. If you
+            delete your account, we will delete your personal data in accordance
+            with our data retention policies.
           </p>
         </section>
 
@@ -163,8 +165,8 @@ export default function PrivacyPage() {
           <p className="text-muted-foreground">
             We may update this privacy policy from time to time. We will notify
             you of any changes by posting the new policy on this page and
-            updating the &quot;Last updated&quot; date. You are advised to review
-            this policy periodically.
+            updating the &quot;Last updated&quot; date. You are advised to
+            review this policy periodically.
           </p>
         </section>
 
@@ -180,4 +182,3 @@ export default function PrivacyPage() {
     </div>
   );
 }
-

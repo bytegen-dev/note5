@@ -24,7 +24,7 @@ This project follows the three-layer architecture pattern:
 ## Project Structure
 
 ```
-fullstack-notes/
+note5/
 ├── apps/
 │   └── web/                   # Next.js application
 │       ├── src/

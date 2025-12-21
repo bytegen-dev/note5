@@ -1,5 +1,5 @@
 {
-  "name": "fullstack-notes",
+  "name": "note5",
   "private": true,
   "type": "module",
   "packageManager": "pnpm@10.24.0",
@@ -22,4 +22,3 @@
     "typescript": "5.9.3"
   }
 }
-

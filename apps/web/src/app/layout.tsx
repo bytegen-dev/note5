@@ -9,8 +9,15 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Fullstack Notes",
-  description: "A simple notes app built with Next.js, Prisma, and Better Auth",
+  title: "note5",
+  description:
+    "Simplified CRUD app built with Next.js, Prisma, PostgreSQL, Better Auth, and Zod",
+  icons: {
+    icon: [
+      { url: "/logo-black.png", media: "(prefers-color-scheme: light)" },
+      { url: "/logo-white.png", media: "(prefers-color-scheme: dark)" },
+    ],
+  },
 };
 
 export default function RootLayout({
